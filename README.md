@@ -19,7 +19,7 @@ First Build a image for our program by Dockerfile(we have a dockerfile in our re
       
       
       
-### output
+### Output
 
 title:
 Okkadu
