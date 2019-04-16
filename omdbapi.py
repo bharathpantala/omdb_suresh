@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
+# ----------OMDB_API_QUERY----------------
 
 from __future__ import print_function
 import argparse
