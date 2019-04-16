@@ -8,7 +8,7 @@ You need to obtain your personal API key from the OMDb API website in order to b
 
 
 ### Building an Image:
-First Build a image for our program by Dockerfile which is in repo. Edit the dockerfile and replace the movie name in CMD with your Movie name. Then execute the folowing command to build an image.
+First Build a image for our program by Dockerfile(we have a dockerfile in our repo). Edit the dockerfile and replace the movie name in CMD with your Movie name. Then execute the folowing command to build an image.
 
          # docker build -t <reponame>:<tagname> .
          
