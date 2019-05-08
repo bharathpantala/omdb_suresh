@@ -1,0 +1,26 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: chat
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: chat
+
+  template:
+    metadata:
+      labels:
+        app: chat
+    spec:
+      containers:
+      - name: phoenix-chat
+        image: alvises/phoenix-chat-example:1_kops_chat
+        ports:
+        - containerPort: 4000
+        env:
+        - name: PORT
+          value: "4000"
+        - name: PHOENIX_CHAT_HOST
+          value: "chat.poeticoding.com"
