@@ -1,6 +1,10 @@
+# Base image for OMDB API test
 FROM python:latest
 
+
+# Work zdirectory
 WORKDIR /usr/src/app
+
 
 COPY ./omdbapi.py /usr/src/app
 
